@@ -1,0 +1,18 @@
+# @package _global_
+
+defaults:
+  - _self_
+  - data: datamodule # choose datamodule with `test_dataloader()` for evaluation
+  - model: model
+  - logger: null
+  - trainer: default
+  - paths: default
+  - extras: default
+  - hydra: default
+
+task_name: "eval"
+
+tags: ["dev"]
+
+# passing checkpoint path is necessary for evaluation
+ckpt_path: /home/severyn/Desktop/UNet_BCEDiceLoss_size_1_512_bs32_hard/0/checkpoints/last.ckpt
