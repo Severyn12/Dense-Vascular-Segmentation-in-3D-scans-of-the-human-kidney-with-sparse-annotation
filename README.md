@@ -14,7 +14,7 @@ The insights regarding the performance of different loss functions under the tas
 ## File navigation:
 In this repository, you can find two different folders: Train and Inference, where the first one contains PyTorch scripts necessary for model training on GPU while the latter encompasses an inference notebook utilized for Kaggle competition submissions, along with another notebook featuring evaluation plots. Train scripts were taken from this [repository](https://github.com/burnmyletters/blood-vessel-segmentation-public) (P. S. Great thanks to BurnmyLetters for posting this code).
 
-Saved model weights (use the last saved checkpoint e.g. ```last.ckpt```) along with tensorboard logs are placed on the Google Disk and can be found by this link
+Saved model weights (use the last saved checkpoint e.g. ```last.ckpt```) along with tensorboard logs are placed on the Google Disk and can be found by this [link](https://drive.google.com/drive/folders/1wCI1m7XA502vmjhjxM0dHVbe-MbD53dG)
 
 ## Run Configuration:
  * Initially you should download the [Kaggle competition](https://www.kaggle.com/competitions/blood-vessel-segmentation/overview) dataset. This can be done through this [page](https://www.kaggle.com/competitions/blood-vessel-segmentation/data) or by running this command.
@@ -40,7 +40,7 @@ conda activate bvs
 pip install -r requirements.txt
 ```
 
-* To train the model run the next command (by default will be used BDoU Loss).
+* To train the model run the next command (by default will be used BDoU Loss). **Note** Don't forget to change the ```data_dir``` argument in the file ```configs/paths/default.yaml```. Set this variable to a directory path, where you have saved a Kaggle dataset.
 
 ```bash
 sh ./train.sh
